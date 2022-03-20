@@ -1,0 +1,195 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: tshet_sam
+  name: 切韻三拼
+  version: "0.0.1"
+  author:
+    - 思無邪SyiMyuZya <syimyuzya@gmail.com>
+    - Ayaka Mikazuki <ayaka@mail.shn.hk>
+  description: |-
+    切韻三拼測試版
+  dependencies:
+    - luna_pinyin
+    - jyut6ping3
+    - tshet_unspaced
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: half_shape
+    states: [ 全角, 半角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@luna_pinyin
+    - affix_segmentor@jyut6ping3
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - script_translator@luna_pinyin
+    - script_translator@jyut6ping3
+  filters:
+    - simplifier
+    - uniquifier
+    - reverse_lookup_filter@tshet_reverse_lookup
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - xform/^([a-z]*)$/\U$1\E/
+    # 調整
+    - xform/^DIH$/DIJH/
+    - xform/([IYU])AE(NG[QH]?|K)/$1E$2/
+    - xform/(RH?)Y(NG[QH]?|K)/$1YI$2/
+    - xform/(RH?)WIE/$1UE/
+    - xform/(RH?)IE/$1YE/
+    - xform/(RH?)WI/$1UI/
+    - xform/(RH?)I/$1YI/
+    # 尾、調
+    # -*
+    - xform/IAE([QH]?)$/AEX$1/
+    - xform/WEONG([QH]?)$/EOX$1/
+    - xform/WEOK$/EOp/
+    - xform/(RH?)UONG([QH]?)$/$1OX$2/
+    - xform/(RH?)UOK$/$1Op/
+    - xform/(RH?YA)NG([QH]?)$/$1X$2/
+    - xform/(RH?[YU]O?)([QH]?)$/$1X$2/
+    - xform/X$/o/
+    - xform/XH$/a/
+    - xform/XQ$/z/
+    # -n/j
+    - xform/N$/t/
+    - xform/NH$/r/
+    - xform/T$/e/
+    - xform/NQ$/w/
+    - xform/J$/y/
+    - xform/JH$/u/
+    - xform/JQ$/i/
+    # -m/w
+    - xform/M$/b/
+    - xform/MH$/v/
+    - xform/P$/c/
+    - xform/MQ$/x/
+    - xform/W$/n/
+    - xform/WH$/m/
+    - xform/WQ$/l/
+    # -ng/0
+    - xform/NG$/g/
+    - xform/NGH$/f/
+    - xform/K$/d/
+    - xform/NGQ$/s/
+    - xform/H$/j/
+    - xform/Q$/k/
+    - xform/([A-Z])$/$1h/
+    # 母
+    - xform/([TDN])J/$1/
+    - xform/R//
+    - xform/^PH/o/
+    - xform/^TH/y/
+    - xform/^KH/i/
+    - xform/^TSH/r/
+    - xform/^NG/u/
+    - xform/^GH/x/
+    - xform/^TS/f/
+    - xform/^DZ/a/
+    - xform/^SJ/v/
+    - xform/^ZJ/c/
+    - xform/^Q/e/
+    - xform/^([PBMTDNLKGHSZJ])/\l$1/
+    - xform/^([YU])/w$1/
+    - derive/^e/q/
+    # 元音
+    - xform/UE(.)$/s$1/
+    - xform/WIE(.)$/d$1/
+    - xform/YE(.)$/f$1/
+    - xform/IE(.)$/g$1/
+    - xform/UI(.)$/l$1/
+    - xform/WI(.)$/k$1/
+    - xform/YI(.)$/j$1/
+    - xform/I(.)$/h$1/
+    - xform/UA(.)$/t$1/
+    - xform/YA(.)$/y$1/
+    - xform/UO(.)$/e$1/
+    - xform/YO(.)$/r$1/
+    - xform/U(.)$/i$1/
+    - xform/Y(.)$/u$1/
+    - xform/WEE(.)$/x$1/
+    - xform/EE(.)$/c$1/
+    - xform/WAE(.)$/q$1/
+    - xform/AE(.)$/a$1/
+    - xform/OEU(.)$/z$1/
+    - xform/OU(.)$/w$1/
+    - xform/EO(.)$/o$1/
+    - xform/O(.)$/p$1/
+    - xform/WE(.)$/v$1/
+    - xform/E(.)$/b$1/
+    - xform/WA(.)$/m$1/
+    - xform/A(.)$/n$1/
+
+translator:
+  dictionary: tshet
+  db_class: tabledb
+  spelling_hints: 8
+  # TODO preedit_format:
+  comment_format:
+    - "xform/$/\u200b/" # 永遠顯示拼音
+
+luna_pinyin:
+  tag: luna_pinyin
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: ";"
+  tips: 〔普通話〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+jyut6ping3:
+  tag: jyut6ping3
+  dictionary: jyut6ping3
+  prefix: "f"
+  suffix: ";"
+  tips: 〔粵語〕
+
+tshet_reverse_lookup:
+  tags: [ luna_pinyin, jyut6ping3 ]
+  overwrite_comment: false
+  dictionary: tshet_unspaced
+  comment_format:
+    - xform/=/ /
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[a-z]+)$"
+    luna_pinyin: "`[a-z]*;?$"
+    jyut6ping3: "f[a-z]*;?$"
