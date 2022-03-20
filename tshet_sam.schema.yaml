@@ -3,13 +3,13 @@
 
 schema:
   schema_id: tshet_sam
-  name: 切韻三拼
+  name: 切韻拼音·三拼
   version: "0.0.2"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
   description: |-
-    切韻三拼測試版
+    切韻拼音三拼輸入方案測試版
   dependencies:
     - luna_pinyin
     - jyut6ping3
