@@ -91,16 +91,18 @@ Z    X C V B       N M
 
 ### 鍵位表
 
-| 左五       | 左四       | 左三       | 左二      | 左一      | 右一      | 右二      | 右三      | 右四      | 右五     |
-| ---------- | ---------- | ---------- | --------- | --------- | --------- | --------- | --------- | --------- | -------- |
-| wae<br />Q | ou<br />W  | uo<br />E  | yo<br />R | ua<br />T | ya<br />Y | y<br />U  | u<br />I  | eo<br />O | o<br />P |
-| ae<br />A  | ue<br />S  | wie<br />D | ye<br />F | ie<br />G | i<br />H  | yi<br />J | wi<br />K | ui<br />L |          |
-| oeu<br />Z | wee<br />X | ee<br />C  | we<br />V | e<br />B  | a<br />N  | wa<br />M |           |           |          |
+| 左五       | 左四       | 左三      | 左二      | 左一      | 右一      | 右二      | 右三       | 右四      | 右五     |
+| ---------- | ---------- | --------- | --------- | --------- | --------- | --------- | ---------- | --------- | -------- |
+| wae<br />Q | ou<br />W  | u<br />E  | y<br />R  | ua<br />T | ya<br />Y | yo<br />U | uo<br />I  | eo<br />O | o<br />P |
+| ae<br />A  | ui<br />S  | wi<br />D | yi<br />F | i<br />G  | ie<br />H | ye<br />J | wie<br />K | ue<br />L |          |
+| oeu<br />Z | wee<br />X | ee<br />C | wa<br />V | a<br />B  | e<br />N  | we<br />M |            |           |          |
 
-- 中排左手 ie 系、右手 i 系，開口靠內、合口靠外
-- 上排中部為其他三等，左手 yo/uo 右手 y/u，中間為 ya/ua
-- 下排中部為一等 a、e，一等 o, eo 放在右上
-- 一等 ou 及二等均在左邊
+- 中排左手 i 系、右手 ie 系，開口靠內、合口靠外
+- 上排中部為其他三等，左手 y/u 右手 yo/uo，中間為 ya/ua
+- 下排中部為一等 a、e
+- 一等 o/eo 在右邊 yo/uo 外側
+- 一等 ou 在左邊 y/u 外側
+- 二等在左邊緣
 
 ## TODO
 

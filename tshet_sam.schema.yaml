@@ -4,7 +4,7 @@
 schema:
   schema_id: tshet_sam
   name: 切韻三拼
-  version: "0.0.1"
+  version: "0.0.2"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -123,32 +123,32 @@ speller:
     - xform/^([YU])/w$1/
     - derive/^e/q/
     # 元音
-    - xform/UE(.)$/s$1/
-    - xform/WIE(.)$/d$1/
-    - xform/YE(.)$/f$1/
-    - xform/IE(.)$/g$1/
-    - xform/UI(.)$/l$1/
-    - xform/WI(.)$/k$1/
-    - xform/YI(.)$/j$1/
-    - xform/I(.)$/h$1/
+    - xform/UE(.)$/l$1/
+    - xform/WIE(.)$/k$1/
+    - xform/YE(.)$/j$1/
+    - xform/IE(.)$/h$1/
+    - xform/UI(.)$/s$1/
+    - xform/WI(.)$/d$1/
+    - xform/YI(.)$/f$1/
+    - xform/I(.)$/g$1/
     - xform/UA(.)$/t$1/
     - xform/YA(.)$/y$1/
-    - xform/UO(.)$/e$1/
-    - xform/YO(.)$/r$1/
+    - xform/UO(.)$/i$1/
+    - xform/YO(.)$/u$1/
     - xform/OU(.)$/w$1/
     - xform/OEU(.)$/z$1/
-    - xform/U(.)$/i$1/
-    - xform/Y(.)$/u$1/
+    - xform/U(.)$/e$1/
+    - xform/Y(.)$/r$1/
     - xform/WEE(.)$/x$1/
     - xform/EE(.)$/c$1/
     - xform/WAE(.)$/q$1/
     - xform/AE(.)$/a$1/
     - xform/EO(.)$/o$1/
     - xform/O(.)$/p$1/
-    - xform/WE(.)$/v$1/
-    - xform/E(.)$/b$1/
-    - xform/WA(.)$/m$1/
-    - xform/A(.)$/n$1/
+    - xform/WE(.)$/m$1/
+    - xform/E(.)$/n$1/
+    - xform/WA(.)$/v$1/
+    - xform/A(.)$/b$1/
 
 translator:
   dictionary: tshet
