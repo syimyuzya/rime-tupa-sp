@@ -143,8 +143,8 @@ speller:
     - xform/EE(.)$/c$1/
     - xform/WAE(.)$/q$1/
     - xform/AE(.)$/a$1/
-    - xform/EO(.)$/o$1/
-    - xform/O(.)$/p$1/
+    - xform/EO(.)$/p$1/
+    - xform/O(.)$/o$1/
     - xform/WE(.)$/m$1/
     - xform/E(.)$/n$1/
     - xform/WA(.)$/v$1/
