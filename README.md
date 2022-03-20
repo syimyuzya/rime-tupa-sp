@@ -1,12 +1,14 @@
 # RIME 切韻拼音三拼輸入法（α 測試版）
 
-基於切韻拼音，用固定三鍵打出一字。
+基於 [RIME 切韻拼音輸入方案](https://github.com/ayaka14732/rime-tshet)，用固定三鍵打出一字。
 
 __注意__：此為 alpha 版，音到鍵的對應已基本敲定，雖然仍有些調整空間；鍵位則為初稿，尚需實際測試。故先公開發佈方案，以供體驗使用。
 
+![Screenshot](screenshot.png)
+
 ## 安裝
 
-需要 RIME 輸入法及 [ayaka14732/rime-tshet](https://github.com/ayaka14732/rime-tshet) 切韻拼音方案。
+需要先安裝 RIME 輸入法及切韻拼音輸入方案。
 
 手動安裝：將 `tshet_sam.schema.yaml` 放入 RIME 用戶目錄即可。
 
