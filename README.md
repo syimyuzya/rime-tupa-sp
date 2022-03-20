@@ -80,8 +80,8 @@ Z    X C V B       N M
 | wie<br />接 -ng: wiaeng | ue (知-wie)<br />接 -ng: uaeng   |                          | we                      | wee                        |
 |                         |                                  | yo<br />接 -*: 知莊-yo   | eo<br />接 -*: weong    | oeu                        |
 |                         |                                  | uo<br />接 -*: 知莊-uo   | o<br />接 -*: 知莊-uong |                            |
-| i                       | yi (知-i)<br />拼知莊接 -ng: yng | y<br />接 -*: 知莊-y     | ou                      |                            |
-| wi                      | ui (知-wi)                       | u<br />接 -*: 知莊-u     |                         |                            |
+| i                       | yi (知-i)<br />拼知莊接 -ng: yng | y<br />接 -*: 知莊-y     |                         |                            |
+| wi                      | ui (知-wi)                       | u<br />接 -*: 知莊-u     | ou<br />接 -*: 知莊-ung |                            |
 
 - 「端知章」「精莊」鍵，拼三AC兩欄時默認為章、精，拼三B一欄時默認為知、莊，但通過「-*」韻尾鍵可改變搭配
 
