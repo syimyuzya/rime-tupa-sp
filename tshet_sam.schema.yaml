@@ -152,7 +152,7 @@ speller:
 
 translator:
   dictionary: tshet
-  db_class: tabledb
+  #db_class: tabledb  # 用戶詞典用純文本，測試用
   spelling_hints: 8
   # TODO preedit_format:
   comment_format:
