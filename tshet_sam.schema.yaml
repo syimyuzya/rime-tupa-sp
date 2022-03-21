@@ -77,6 +77,7 @@ speller:
     - xform/(RH?)UNG([QH]?)$/$1OUX$2/
     - xform/(RH?)UK$/$1OUp/
     - xform/(RH?YA)NG([QH]?)$/$1X$2/
+    - xform/(RH?YA)K$/$1p/
     - xform/(RH?[YU]O?)([QH]?)$/$1X$2/
     - xform/X$/o/
     - xform/XH$/a/
