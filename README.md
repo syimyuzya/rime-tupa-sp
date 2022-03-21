@@ -8,11 +8,15 @@ __注意__：此為 alpha 版，音到鍵的對應仍有些調整空間；鍵位
 
 ## 安裝
 
-需要先安裝 RIME 輸入法及切韻拼音輸入方案。
+需要先安裝 RIME 輸入法及切韻拼音輸入方案（及其所依賴的 [`rime-cantonese`](https://github.com/rime/rime-cantonese) 方案）。
 
 手動安裝：將 `tshet_sam.schema.yaml` 放入 RIME 用戶目錄即可。
 
 TODO 其他安裝方式
+
+### 反查功能
+
+與 RIME 拼韻拼音輸入法相仿，可按 <kbd>\`</kbd> 然後鍵入漢語拼音，或按 <kbd>~</kbd> 然後鍵入粵拼來反查切韻拼音。
 
 ## 聲母
 

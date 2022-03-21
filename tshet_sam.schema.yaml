@@ -172,7 +172,7 @@ luna_pinyin:
 jyut6ping3:
   tag: jyut6ping3
   dictionary: jyut6ping3
-  prefix: "f"
+  prefix: "~"
   suffix: ";"
   tips: 〔粵語〕
 
@@ -194,4 +194,4 @@ recognizer:
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
     luna_pinyin: "`[a-z]*;?$"
-    jyut6ping3: "f[a-z]*;?$"
+    jyut6ping3: "~[a-z]*;?$"
