@@ -4,7 +4,7 @@
 schema:
   schema_id: tshet_sam
   name: 切韻拼音·三拼
-  version: "0.0.4"
+  version: "0.0.5"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -62,7 +62,6 @@ speller:
     # 調整
     - xform/^DIH$/DIJH/
     - xform/([IYU])AE(NG[QH]?|K)/$1E$2/
-    - xform/(RH?)Y(NG[QH]?|K)/$1YI$2/
     - xform/(RH?)WIE/$1UE/
     - xform/(RH?)IE/$1YE/
     - xform/(RH?)WI/$1UI/
@@ -76,6 +75,8 @@ speller:
     - xform/(RH?)UOK$/$1Op/
     - xform/(RH?)UNG([QH]?)$/$1OUX$2/
     - xform/(RH?)UK$/$1OUp/
+    - xform/(RH?)YNG([QH]?)/$1YIX$2/
+    - xform/(RH?)YK/$1YIp/
     - xform/(RH?YA)NG([QH]?)$/$1X$2/
     - xform/(RH?YA)K$/$1p/
     - xform/(RH?[YU]O?)([QH]?)$/$1X$2/
