@@ -4,7 +4,7 @@
 schema:
   schema_id: tshet_sam
   name: 切韻拼音·三拼
-  version: "0.0.2"
+  version: "0.0.3"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
