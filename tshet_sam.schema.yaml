@@ -4,7 +4,7 @@
 schema:
   schema_id: tshet_sam
   name: 切韻拼音·三拼
-  version: "0.0.3"
+  version: "0.0.4"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -79,33 +79,33 @@ speller:
     - xform/(RH?YA)NG([QH]?)$/$1X$2/
     - xform/(RH?YA)K$/$1p/
     - xform/(RH?[YU]O?)([QH]?)$/$1X$2/
-    - xform/X$/o/
-    - xform/XH$/a/
+    - xform/XH$/o/
+    - xform/X$/a/
     - xform/XQ$/z/
     # -n/j
-    - xform/N$/t/
-    - xform/NH$/r/
+    - xform/NH$/t/
+    - xform/N$/r/
     - xform/T$/e/
     - xform/NQ$/w/
-    - xform/J$/y/
-    - xform/JH$/u/
+    - xform/JH$/y/
+    - xform/J$/u/
     - xform/JQ$/i/
     # -m/w
-    - xform/M$/b/
-    - xform/MH$/v/
+    - xform/MH$/b/
+    - xform/M$/v/
     - xform/P$/c/
     - xform/MQ$/x/
-    - xform/W$/n/
-    - xform/WH$/m/
+    - xform/WH$/n/
+    - xform/W$/m/
     - xform/WQ$/l/
     # -ng/0
-    - xform/NG$/g/
-    - xform/NGH$/f/
+    - xform/NGH$/g/
+    - xform/NG$/f/
     - xform/K$/d/
     - xform/NGQ$/s/
-    - xform/H$/j/
+    - xform/H$/h/
     - xform/Q$/k/
-    - xform/([A-Z])$/$1h/
+    - xform/([A-Z])$/$1j/
     # 母
     - xform/([TDN])J/$1/
     - xform/R//
@@ -132,8 +132,8 @@ speller:
     - xform/WI(.)$/d$1/
     - xform/YI(.)$/f$1/
     - xform/I(.)$/g$1/
-    - xform/UA(.)$/t$1/
-    - xform/YA(.)$/y$1/
+    - xform/UA(.)$/y$1/
+    - xform/YA(.)$/t$1/
     - xform/UO(.)$/i$1/
     - xform/YO(.)$/u$1/
     - xform/OU(.)$/w$1/
