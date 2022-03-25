@@ -125,6 +125,7 @@ speller:
     - xform/^([YU])/w$1/
     - derive/^e/q/
     # 元音
+    - xform/OI(.)$/z$1/
     - xform/UE(.)$/l$1/
     - xform/WIE(.)$/k$1/
     - xform/YE(.)$/j$1/
