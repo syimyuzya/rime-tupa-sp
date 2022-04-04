@@ -4,7 +4,7 @@
 schema:
   schema_id: tupa_sp
   name: 切韻拼音·三拼
-  version: "0.0.5"
+  version: "0.0.6"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -70,42 +70,43 @@ speller:
     # -*
     - xform/IAE([QH]?)$/AEX$1/
     - xform/WEONG([QH]?)$/EOX$1/
-    - xform/WEOK$/EOp/
+    - xform/WEOK$/EOXK/
     - xform/(RH?)UONG([QH]?)$/$1OX$2/
-    - xform/(RH?)UOK$/$1Op/
+    - xform/(RH?)UOK$/$1OXK/
     - xform/(RH?)UNG([QH]?)$/$1OUX$2/
-    - xform/(RH?)UK$/$1OUp/
+    - xform/(RH?)UK$/$1OUXK/
     - xform/(RH?)YNG([QH]?)/$1YIX$2/
-    - xform/(RH?)YK/$1YIp/
+    - xform/(RH?)YK/$1YIXK/
     - xform/(RH?YA)NG([QH]?)$/$1X$2/
-    - xform/(RH?YA)K$/$1p/
+    - xform/(RH?YA)K$/$1XK/
     - xform/(RH?[YU]O?)([QH]?)$/$1X$2/
-    - xform/XH$/o/
     - xform/X$/a/
-    - xform/XQ$/z/
+    - xform/XQ$/o/
+    - xform/XH$/p/
+    - xform/XK$/z/
     # -n/j
-    - xform/NH$/t/
     - xform/N$/r/
-    - xform/T$/e/
-    - xform/NQ$/w/
-    - xform/JH$/y/
+    - xform/NQ$/e/
+    - xform/NH$/t/
+    - xform/T$/w/
     - xform/J$/u/
     - xform/JQ$/i/
+    - xform/JH$/y/
     # -m/w
-    - xform/MH$/b/
     - xform/M$/v/
-    - xform/P$/c/
-    - xform/MQ$/x/
-    - xform/WH$/n/
+    - xform/MQ$/c/
+    - xform/MH$/b/
+    - xform/P$/x/
     - xform/W$/m/
     - xform/WQ$/l/
+    - xform/WH$/n/
     # -ng/0
-    - xform/NGH$/g/
     - xform/NG$/f/
-    - xform/K$/d/
-    - xform/NGQ$/s/
-    - xform/H$/h/
+    - xform/NGQ$/d/
+    - xform/NGH$/g/
+    - xform/K$/s/
     - xform/Q$/k/
+    - xform/H$/h/
     - xform/([A-Z])$/$1j/
     # 母
     - xform/([TDN])J/$1/
@@ -125,33 +126,33 @@ speller:
     - xform/^([YU])/w$1/
     - derive/^e/q/
     # 元音
-    - xform/OI(.)$/z$1/
-    - xform/UE(.)$/l$1/
-    - xform/WIE(.)$/k$1/
-    - xform/YE(.)$/j$1/
-    - xform/IE(.)$/h$1/
-    - xform/UI(.)$/s$1/
-    - xform/WI(.)$/d$1/
-    - xform/YI(.)$/f$1/
-    - xform/I(.)$/g$1/
-    - xform/UA(.)$/y$1/
-    - xform/YA(.)$/t$1/
-    - xform/UO(.)$/i$1/
+    - xform/OI(.)$/q$1/
+    - xform/UE(.)$/p$1/
+    - xform/WIE(.)$/o$1/
+    - xform/YE(.)$/i$1/
+    - xform/IE(.)$/k$1/
+    - xform/UI(.)$/q$1/
+    - xform/WI(.)$/w$1/
+    - xform/YI(.)$/e$1/
+    - xform/I(.)$/d$1/
+    - xform/UA(.)$/z$1/
+    - xform/YA(.)$/a$1/
+    - xform/UO(.)$/j$1/
     - xform/YO(.)$/u$1/
-    - xform/OU(.)$/w$1/
-    - xform/OEU(.)$/z$1/
-    - xform/U(.)$/e$1/
+    - xform/OU(.)$/g$1/
+    - xform/OEU(.)$/n$1/
+    - xform/U(.)$/f$1/
     - xform/Y(.)$/r$1/
     - xform/WEE(.)$/x$1/
     - xform/EE(.)$/c$1/
-    - xform/WAE(.)$/q$1/
-    - xform/AE(.)$/a$1/
-    - xform/EO(.)$/p$1/
-    - xform/O(.)$/o$1/
-    - xform/WE(.)$/m$1/
-    - xform/E(.)$/n$1/
-    - xform/WA(.)$/v$1/
-    - xform/A(.)$/b$1/
+    - xform/WAE(.)$/b$1/
+    - xform/AE(.)$/v$1/
+    - xform/EO(.)$/m$1/
+    - xform/O(.)$/h$1/
+    - xform/WE(.)$/y$1/
+    - xform/E(.)$/l$1/
+    - xform/WA(.)$/t$1/
+    - xform/A(.)$/s$1/
 
 translator:
   dictionary: tupa
