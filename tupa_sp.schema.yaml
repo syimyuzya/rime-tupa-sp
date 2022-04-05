@@ -68,7 +68,7 @@ speller:
     - xform/(RH?)I/$1YI/
     # 尾、調
     # -*
-    - xform/IAE([QH]?)$/AEX$1/
+    - xform/IAE([QH]?)$/IEX$1/
     - xform/WEONG([QH]?)$/EOX$1/
     - xform/WEOK$/EOXK/
     - xform/(RH?)UONG([QH]?)$/$1OX$2/

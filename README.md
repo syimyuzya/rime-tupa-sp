@@ -84,17 +84,18 @@ Z    X C V B       N M
 
 26 鍵
 
-| 三A<br />章、精         | 三B或知組<br />知、莊          | 三C<br />章、精          | 一四等<br />端、精      | 二等<br />知（端併入）、莊 |
-| ----------------------- | ------------------------------ | ------------------------ | ----------------------- | -------------------------- |
-|                         |                                | ya<br />接 -*: 知莊-yang | a                       | ae<br />接 -*: 麻三 iae    |
-|                         |                                | ua                       | wa                      | wae                        |
-| ie<br />接 -ng: iaeng   | ye (知-ie)<br />接 -ng: yaeng  |                          | e                       | ee                         |
-| wie<br />接 -ng: wiaeng | ue (知-wie)<br />接 -ng: uaeng |                          | we                      | wee                        |
-|                         |                                | yo<br />接 -*: 知莊-yo   | eo<br />接 -*: weong    | oeu                        |
-|                         |                                | uo<br />接 -*: 知莊-uo   | o<br />接 -*: 知莊-uong |                            |
-| i                       | yi (知-i)<br />接 -*: 知莊-yng | y<br />接 -*: 知莊-y     |                         |                            |
-| wi                      | ui (知-wi)                     | u<br />接 -*: 知莊-u     | ou<br />接 -*: 知莊-ung |                            |
+| 三A<br />章、精           | 三B或知組<br />知、莊          | 三C<br />章、精          | 一四等<br />端、精      | 二等<br />知（端併入）、莊 |
+| ------------------------- | ------------------------------ | ------------------------ | ----------------------- | -------------------------- |
+|                           |                                | ya<br />接 -*: 知莊-yang | a                       | ae                         |
+|                           |                                | ua                       | wa                      | wae                        |
+| ie<br />接 -ng/*: iae(ng) | ye (知-ie)<br />接 -ng: yaeng  |                          | e                       | ee                         |
+| wie<br />接 -ng: wiaeng   | ue (知-wie)<br />接 -ng: uaeng |                          | we                      | wee                        |
+|                           |                                | yo<br />接 -*: 知莊-yo   | eo<br />接 -*: weong    | oeu                        |
+|                           |                                | uo<br />接 -*: 知莊-uo   | o<br />接 -*: 知莊-uong |                            |
+| i                         | yi (知-i)<br />接 -*: 知莊-yng | y<br />接 -*: 知莊-y     |                         |                            |
+| wi                        | ui (知-wi)                     | u<br />接 -*: 知莊-u     | ou<br />接 -*: 知莊-ung |                            |
 
+- iae、yae、wiae、uae 併入 ie、ye、wie、ue，靠 -ng 尾區分（麻三則用 -* 尾區分）
 - 「端知章」「精莊」鍵，拼三AC兩欄時默認為章、精，拼三B一欄時默認為知、莊，但通過「-*」韻尾鍵可改變搭配
 
 ### 「-*」尾用法
@@ -106,7 +107,7 @@ Z    X C V B       N M
    - 通攝 ung、uong 欲拼知莊組，用對應的一等元音 ou、o 接 -* 尾
    - 蒸韻 yng 欲拼知莊組，用對應的B類元音 yi 接 -* 尾
 3. 調整介音：
-   - 麻三 iae 為 ae 接 -* 尾
+   - 麻三 iae 為 ie 接 -* 尾，與清開 iaeng 為 ie 接 -ng 平行
    - 登合 weong 為 eo 接 -* 尾
 
 
@@ -120,7 +121,7 @@ Z    X C V B       N M
 2. __-ng 尾可能換元音__：打 -ng 尾三等字，照着上一條做，卻打出了不帶韻尾的字，說明除了韻尾鍵用「-*」外，還需要換用與其最接近的相鄰元音鍵（鍵盤上也是相鄰的），這種情況只有三個韻出現：ung 用 ou 鍵、uong 用 o 鍵、yng 用 yi 鍵就可以了！
    - 例：初學三拼想打「中」trung，敲 t-u-ng (<kbd>T</kbd>-<kbd>E</kbd>-<kbd>F</kbd>) 發現打出的是「終」tjung，改打 t-u-* (<kbd>T</kbd>-<kbd>E</kbd>-<kbd>A</kbd>) 發現打出的是「啁」tru 沒有 -ng 尾，那麼再改 t-ou-* (<kbd>T</kbd>-<kbd>W</kbd>-<kbd>A</kbd>) 就能成功打出「中」
    - 例二：想打「僜」trhyng，敲 th-y-ng (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>F</kbd>) 發現打出的是「稱」tjhyng，改打 th-y-* (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>A</kbd>) 發現打出的是「癡」trhy 沒有 -ng 尾，那麼再改 th-yi-* (<kbd>Y</kbd>-<kbd>F</kbd>-<kbd>A</kbd>) 能成功打出「僜」
-3. __最後兩韻直接記__：最後就只剩下麻三 iae 用 ae-\*，以及登合 weong 用 eo-\* 這兩個特別組合了，請直接記住就好。
+3. __最後兩韻直接記__：最後就只剩下麻三 iae 用 ie-\*，以及登合 weong 用 eo-\* 這兩個特別組合了，請直接記住就好。
 
 ### 特殊處理
 
