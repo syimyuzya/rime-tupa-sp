@@ -60,12 +60,13 @@ speller:
   algebra:
     - xform/^([a-z]*)$/\U$1\E/
     # 調整
-    - xform/^DIH$/DIJH/
-    - xform/([IYU])AE(NG[QH]?|K)/$1E$2/
-    - xform/(RH?)WIE/$1UE/
+    - xform/^DIH$/DIJH/  # 地
+    - xform/([IYU])AE(NG[QH]?|K)/$1E$2/  # (w)i/y/uae > (w)i/y/ue
+    - xform/(RH?)WIE/$1UE/  # 知組
     - xform/(RH?)IE/$1YE/
     - xform/(RH?)WI/$1UI/
     - xform/(RH?)I/$1YI/
+    - xform/IA(NG[QH]?|K)/YA$1/  # 陽A
     # 尾、調
     # -*
     - xform/IAE([QH]?)$/IEX$1/
