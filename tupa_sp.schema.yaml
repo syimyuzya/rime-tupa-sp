@@ -4,7 +4,7 @@
 schema:
   schema_id: tupa_sp
   name: 切韻拼音·三拼
-  version: "0.0.6"
+  version: "0.0.7"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -86,29 +86,29 @@ speller:
     - xform/XH$/p/
     - xform/XK$/z/
     # -n/j
-    - xform/N$/r/
-    - xform/NQ$/e/
+    - xform/N$/e/
+    - xform/NQ$/r/
     - xform/NH$/t/
     - xform/T$/w/
-    - xform/J$/u/
-    - xform/JQ$/i/
+    - xform/J$/i/
+    - xform/JQ$/u/
     - xform/JH$/y/
     # -m/w
-    - xform/M$/v/
-    - xform/MQ$/c/
+    - xform/M$/c/
+    - xform/MQ$/v/
     - xform/MH$/b/
     - xform/P$/x/
-    - xform/W$/m/
-    - xform/WQ$/l/
+    - xform/W$/l/
+    - xform/WQ$/m/
     - xform/WH$/n/
     # -ng/0
-    - xform/NG$/f/
-    - xform/NGQ$/d/
+    - xform/NG$/d/
+    - xform/NGQ$/f/
     - xform/NGH$/g/
     - xform/K$/s/
-    - xform/Q$/k/
+    - xform/Q$/j/
     - xform/H$/h/
-    - xform/([A-Z])$/$1j/
+    - xform/([A-Z])$/$1k/
     # 母
     - xform/([TDN])J/$1/
     - xform/R//

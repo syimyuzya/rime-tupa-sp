@@ -64,20 +64,20 @@ __注意__：此為 alpha 版，音到鍵的對應仍有些調整空間；鍵位
 
 | 左五                 | 左四                | 左三                  | 左二                 | 左一                  | 右一                | 右二               | 右三                | 右四                 | 右五                 |
 | -------------------- | ------------------- | --------------------- | -------------------- | --------------------- | ------------------- | ------------------ | ------------------- | -------------------- | -------------------- |
-| <br />Q              | N入<br />-t<br />E  | N上<br />-nq<br />W   | N平-n<br />R         | N去<br />-nh<br />T   | J去<br />-jh<br />Y | J平<br />-j<br />U | J上<br />-jq<br />I | \*上<br />-*q<br />O | \*去<br />-*h<br />P |
-| \*平<br />-*<br />A  | NG入<br />-k<br />D | NG上<br />-ngq<br />S | NG平<br />-ng<br />F | NG去<br />-ngh<br />G | ∅去<br />-∅h<br />H | ∅平<br />-∅<br />J | ∅上<br />-∅q<br />K | W上<br />-wq<br />L  |                      |
-| \*入<br />-*k<br />Z | M入<br />-p<br />C  | M上<br />-mq<br />X   | M平<br />-m<br />V   | M去<br />-mh<br />B   | W去<br />-wh<br />N | W平<br />-w<br />M |                     |                      |                      |
+| <br />Q              | N入<br />-t<br />W  | N平<br />-nq<br />E   | N上<br />-n<br />R   | N去<br />-nh<br />T   | J去<br />-jh<br />Y | J上<br />-j<br />U | J平<br />-jq<br />I | \*上<br />-*q<br />O | \*去<br />-*h<br />P |
+| \*平<br />-*<br />A  | NG入<br />-k<br />S | NG平<br />-ngq<br />D | NG上<br />-ng<br />F | NG去<br />-ngh<br />G | ∅去<br />-∅h<br />H | ∅上<br />-∅<br />J | ∅平<br />-∅q<br />K | W平<br />-wq<br />L  |                      |
+| \*入<br />-*k<br />Z | M入<br />-p<br />X  | M平<br />-mq<br />C   | M上<br />-m<br />V   | M去<br />-mh<br />B   | W去<br />-wh<br />N | W上<br />-w<br />M |                     |                      |                      |
 
 ```
 Q    W E R T       Y U I    O P
-     入上平去<n  j>去平上 *>上去
+     入平上去<n  j>去上平 *>上去
 A    S D F G       H J K    L
-平<* 入上平去<ng 0>去平上 w>上
+平<* 入平上去<ng 0>去上平 w>平
 Z    X C V B       N M
-入<* 入上平去<m  w>去平
+入<* 入平上去<m  w>去上
 ```
 
-- 中間部分三排對應韻尾三類，左手陽聲韻，右手陰聲韻（惟 w 尾上聲挪至旁邊 L）
+- 中間部分三排對應韻尾三類，左手陽聲韻，右手陰聲韻（惟 -w 尾平聲挪至旁邊 L）
 - 「-*」尾四鍵均在邊緣
 
 ## 元音
