@@ -116,11 +116,11 @@ Z    X C V B       N M
 <b>「-*」尾用法不用一上來就全記住！</b>只需要以下三條處理原則就可以<b>立即開始打字</b>，並在實際使用中漸漸掌握用法：
 
 1. __章精變知莊__：想打「知」「莊」組聲母卻打出「章」「精」組，說明此處可能就是「-\*」尾派上用場的時候！如果想打的元音不分AB類重紐，就換用「-\*」韻尾鍵試試吧！（當然，分重紐的元音就只需換B類即可切換聲母，不用換韻尾）
-   - 例：初學三拼時想試着打「張」tryang，敲 t-ya-ng (<kbd>T</kbd>-<kbd>T</kbd>-<kbd>F</kbd>) 發現打出的是「章」tjyang，且 ya 不分重紐，那麼改打 t-ya-* (<kbd>T</kbd>-<kbd>T</kbd>-<kbd>A</kbd>) 就能成功打出「張」
-   - 例二：想打「使」sryq，敲 s-y-q (<kbd>S</kbd>-<kbd>R</kbd>-<kbd>K</kbd>) 發現打出的是「萆」syq，且 y 不分重紐AB，改打 s-y-*q (<kbd>S</kbd>-<kbd>R</kbd>-<kbd>Z</kbd>) 就能成功打出「使」
+   - 例：初學三拼時想試着打「張」tryang，敲 t-ya-ng (<kbd>T</kbd>-<kbd>A</kbd>-<kbd>D</kbd>) 發現打出的是「章」tjyang，且 ya 不分重紐，那麼改打 t-ya-* (<kbd>T</kbd>-<kbd>A</kbd>-<kbd>A</kbd>) 就能成功打出「張」
+   - 例二：想打「使」sryq，敲 s-y-q (<kbd>S</kbd>-<kbd>R</kbd>-<kbd>J</kbd>) 發現打出的是「萆」syq，且 y 不分重紐AB，改打 s-y-*q (<kbd>S</kbd>-<kbd>R</kbd>-<kbd>O</kbd>) 就能成功打出「使」
 2. __-ng 尾可能換元音__：打 -ng 尾三等字，照着上一條做，卻打出了不帶韻尾的字，說明除了韻尾鍵用「-*」外，還需要換用與其最接近的相鄰元音鍵（鍵盤上也是相鄰的），這種情況只有三個韻出現：ung 用 ou 鍵、uong 用 o 鍵、yng 用 yi 鍵就可以了！
-   - 例：初學三拼想打「中」trung，敲 t-u-ng (<kbd>T</kbd>-<kbd>E</kbd>-<kbd>F</kbd>) 發現打出的是「終」tjung，改打 t-u-* (<kbd>T</kbd>-<kbd>E</kbd>-<kbd>A</kbd>) 發現打出的是「啁」tru 沒有 -ng 尾，那麼再改 t-ou-* (<kbd>T</kbd>-<kbd>W</kbd>-<kbd>A</kbd>) 就能成功打出「中」
-   - 例二：想打「僜」trhyng，敲 th-y-ng (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>F</kbd>) 發現打出的是「稱」tjhyng，改打 th-y-* (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>A</kbd>) 發現打出的是「癡」trhy 沒有 -ng 尾，那麼再改 th-yi-* (<kbd>Y</kbd>-<kbd>F</kbd>-<kbd>A</kbd>) 能成功打出「僜」
+   - 例：初學三拼想打「中」trung，敲 t-u-ng (<kbd>T</kbd>-<kbd>F</kbd>-<kbd>D</kbd>) 發現打出的是「終」tjung，改打 t-u-* (<kbd>T</kbd>-<kbd>F</kbd>-<kbd>A</kbd>) 發現打出的是「啁」tru 沒有 -ng 尾，那麼再改 t-ou-* (<kbd>T</kbd>-<kbd>G</kbd>-<kbd>A</kbd>) 就能成功打出「中」
+   - 例二：想打「僜」trhyng，敲 th-y-ng (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>D</kbd>) 發現打出的是「稱」tjhyng，改打 th-y-* (<kbd>Y</kbd>-<kbd>R</kbd>-<kbd>A</kbd>) 發現打出的是「癡」trhy 沒有 -ng 尾，那麼再改 th-yi-* (<kbd>Y</kbd>-<kbd>E</kbd>-<kbd>A</kbd>) 能成功打出「僜」
 3. __最後兩韻直接記__：最後就只剩下麻三 iae 用 ie-\*，以及登合 weong 用 eo-\* 這兩個特別組合了，請直接記住就好。
 
 ### 特殊處理
