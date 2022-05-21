@@ -4,7 +4,7 @@
 schema:
   schema_id: tupa_sp
   name: 切韻拼音·三拼
-  version: "0.0.8"
+  version: "0.1.0"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
