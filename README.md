@@ -8,11 +8,50 @@ __注意__：本輸入方案目前為 beta 版，設計已基本敲定，並經�
 
 ## 安裝
 
-需要先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa#%E5%AE%89%E8%A3%9D)。
+Windows：
 
-手動安裝：將 `tupa_sp.schema.yaml` 放入 RIME 用戶目錄即可。
+1. 參見[切韻拼音輸入法 Windows 安裝方法](https://github.com/ayaka14732/rime-tupa#windows-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
 
-其他安裝方式：（TODO 待列出）
+2. 在第二步鍵入 `ayaka14732/rime-tupa` 按 <kbd>Enter</kbd> 後，再額外鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd>，然後再繼續第三步。
+
+   ※ 如果之前已經安裝過切韻拼音，則在跳出的視窗僅鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd> 即可。
+
+3. 在第三步勾選輸入法時，額外勾選「切韻拼音·三拼」。
+
+macOS：
+
+1. 參見[切韻拼音輸入法 macOS 安裝方法](https://github.com/ayaka14732/rime-tupa#macos-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+
+2. 在第二步後，再額外複製粘貼以下命令：
+
+   ```sh
+   curl -fsSL https://git.io/rime-install | bash -s -- syimyuzya/rime-tupa-sp custom:set:config=default,key=installed_from,value=syimyuzya/rime-tupa-sp custom:clear_schema_list custom:add:schema=tupa custom:add:schema=tupa_sp custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
+   ```
+
+   ※ 如果之前已安裝切韻拼音，則只須複製粘貼上述命令即可。
+
+3. 之後繼續第三步，選取輸入法。
+
+手動安裝：
+
+1. 先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa#%E5%AE%89%E8%A3%9D)
+
+2. 下載此處的 `tupa_sp.schema.yaml`
+
+2. 將 `tupa_sp.schema.yaml` 放入 RIME 用戶目錄
+
+3. 在 `default.custom.yaml` 的 `schema_list` 中仿照已有項目加入一行 `- schema: tupa_sp`，注意與已有的項目對齊（如下方代碼所示）
+
+   若用戶目錄無該文件，則新建並貼上以下內容：
+
+   ```yaml
+   patch:
+     schema_list:
+       - schema: tupa
+       - schema: tupa_sp
+   ```
+
+4. 重新部署後即可選擇「切韻拼音·三拼」輸入法
 
 ### 反查功能
 
