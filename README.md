@@ -4,54 +4,9 @@
 
 __注意__：本輸入方案目前為 beta 版，設計已基本敲定，並經過測試。歡迎反饋使用體驗～
 
+[安裝方式](#installation)見文末。
+
 ![Screenshot](screenshot.png)
-
-## 安裝
-
-Windows：
-
-1. 參見[切韻拼音輸入法 Windows 安裝方法](https://github.com/ayaka14732/rime-tupa#windows-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
-
-2. 在第二步鍵入 `ayaka14732/rime-tupa` 按 <kbd>Enter</kbd> 後，再額外鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd>，然後再繼續第三步。
-
-   ※ 如果之前已經安裝過切韻拼音，則在跳出的視窗僅鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd> 即可。
-
-3. 在第三步勾選輸入法時，額外勾選「切韻拼音·三拼」。
-
-macOS：
-
-1. 參見[切韻拼音輸入法 macOS 安裝方法](https://github.com/ayaka14732/rime-tupa#macos-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
-
-2. 在第二步後，再額外複製粘貼以下命令：
-
-   ```sh
-   curl -fsSL https://git.io/rime-install | bash -s -- syimyuzya/rime-tupa-sp custom:set:config=default,key=installed_from,value=syimyuzya/rime-tupa-sp custom:clear_schema_list custom:add:schema=tupa custom:add:schema=tupa_sp custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
-   ```
-
-   ※ 如果之前已安裝切韻拼音，則只須複製粘貼上述命令即可。
-
-3. 之後繼續第三步，選取輸入法。
-
-手動安裝：
-
-1. 先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa#%E5%AE%89%E8%A3%9D)
-
-2. 下載此處的 `tupa_sp.schema.yaml`
-
-2. 將 `tupa_sp.schema.yaml` 放入 RIME 用戶目錄
-
-3. 在 `default.custom.yaml` 的 `schema_list` 中仿照已有項目加入一行 `- schema: tupa_sp`，注意與已有的項目對齊（如下方代碼所示）
-
-   若用戶目錄無該文件，則新建並貼上以下內容：
-
-   ```yaml
-   patch:
-     schema_list:
-       - schema: tupa
-       - schema: tupa_sp
-   ```
-
-4. 重新部署後即可選擇「切韻拼音·三拼」輸入法
 
 ### 反查功能
 
@@ -59,11 +14,11 @@ macOS：
 
 ## 鍵位表
 
-此為簡表，具體說明及鍵位排佈邏輯（記憶方法）見後文詳述。
+此為簡表，具體說明及鍵位排佈邏輯（亦是記憶方法）見後文詳述。
 
 ![Layout](layout.png)
 
-其中[標為「-*」的韻尾鍵用法亦可點此預先了解](#special-final)。
+其中[標為「-*」的韻尾鍵用法可點此預先了解](#special-final)。
 
 ## 聲母
 
@@ -145,7 +100,7 @@ Z    X C V B       N M
 
 1. 調整聲母搭配：
    - 主要的 3C 元音 yo/uo/y/u 後接 -* 時為 -∅ 尾，並由原先拼章精組改為拼知莊組
-   - ya 後接 -* 為 -ng 尾，並改拼知莊組
+   - ya 後接 -* 時為 -ng 尾，並改拼知莊組
 2. 調整等第及聲母搭配
    - 通攝 ung、uong 欲拼知莊組，用對應的一等元音 ou、o 接 -* 尾
    - 蒸韻 yng 欲拼知莊組，用對應的B類元音 yi 接 -* 尾
@@ -156,7 +111,13 @@ Z    X C V B       N M
 
 ### <a name="special-final"></a>如何掌握「-*」尾用法？
 
-<b>「-*」尾用法不需要硬記！</b>只需要以下三條處理原則就可以對着鍵位表<b>立即開始打字</b>，並在實際使用中漸漸熟悉其用法：
+上一節所述「-*」尾用法<b>並不需要硬記！</b>只需要以下三條處理原則就可以對着鍵位表<b>立即開始打字</b>，並在實際使用中漸漸熟悉其用法：
+
+1. 章精變知莊
+2. 通曾攝用鄰元音
+3. 麻三、登合直接記
+
+具體來說：
 
 1. __章精變知莊__：想打「知」「莊」組聲母卻打出「章」「精」組，說明此處可能就是「-\*」尾派上用場的時候！如果想打的元音不分AB類重紐，就換用「-\*」韻尾鍵試試吧！（當然，分重紐的元音就只需換B類即可切換聲母，不用換韻尾）
    - 例：初學三拼時想試着打「張」tryang，敲 t-ya-ng (<kbd>T</kbd>-<kbd>A</kbd>-<kbd>D</kbd>) 發現打出的是「章」tjyang，且 ya 不分重紐，那麼改打 t-ya-* (<kbd>T</kbd>-<kbd>A</kbd>-<kbd>A</kbd>) 就能成功打出「張」
@@ -170,7 +131,7 @@ Z    X C V B       N M
 
 - 「地」dih 單獨編碼為「d-i-jh」，以區別於「視」（常母，d-i-∅h）
 - 「𩦠」biangq 元音 ia 按 ya 來輸入
-- 「怎」tsoimq（精開一侵上）該音是後起音，不在切韻音系中，其元音 oi 寄於最不常用的 ui 鍵，編碼為「ts-ui-mq」
+- 「怎」tsoimq（精開一侵上）該音是後起音，不在切韻音系中，其主元音 oi（表示「一等的 i 元音」）寄於最不常用的 ui 鍵，編碼為「ts-ui-mq」
 
 ### 鍵位
 
@@ -191,6 +152,74 @@ Z    X C V B       N M
   - 左手小指（即 a 左邊）為 ya，合口 ua 在其下
 - 二等元音在下排連續五鍵
 
+## <a name="installation"></a>安裝
+
+### Windows
+
+1. 參見[切韻拼音輸入法 Windows 安裝方法](https://github.com/ayaka14732/rime-tupa#windows-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+
+2. 在第二步鍵入 `ayaka14732/rime-tupa` 按 <kbd>Enter</kbd> 後，再額外鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd>，然後再繼續第三步。
+
+   ※ 如果之前已經安裝過切韻拼音，則在跳出的視窗僅鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd> 即可。
+
+3. 在第三步勾選輸入法時，額外勾選「切韻拼音·三拼」。
+
+### macOS
+
+1. 參見[切韻拼音輸入法 macOS 安裝方法](https://github.com/ayaka14732/rime-tupa#macos-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+
+2. 在第二步後，再額外複製粘貼以下命令：
+
+   ```sh
+   curl -fsSL https://git.io/rime-install | bash -s -- syimyuzya/rime-tupa-sp custom:set:config=default,key=installed_from,value=syimyuzya/rime-tupa-sp custom:clear_schema_list custom:add:schema=tupa custom:add:schema=tupa_sp custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
+   ```
+
+   ※ 如果之前已安裝切韻拼音，則只須複製粘貼上述命令即可。
+
+3. 之後繼續第三步，選取輸入法。
+
+### Arch Linux
+
+1. 參見[切韻拼音輸入法 Arch Linux 安裝方法](https://github.com/ayaka14732/rime-tupa#arch-linux-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+
+2. 第二步改為從 AUR 安裝 [`rime-tupa-sp`](https://aur.archlinux.org/packages/rime-tupa-sp)：
+
+   ```sh
+   yay -S rime-tupa-sp
+   ```
+   
+   在建立的 `default.custom.yaml` 中額外加入一行 `- schema: tupa_sp`，效果如下：
+   
+   ```yaml
+   patch:
+   schema_list:
+     - schema: tupa
+     - schema: tupa_sp
+   ```
+   
+   然後重新部署。
+
+### 手動安裝
+
+1. 先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa#%E5%AE%89%E8%A3%9D)
+
+2. 下載此處的 `tupa_sp.schema.yaml`
+
+2. 將 `tupa_sp.schema.yaml` 放入 RIME 用戶目錄
+
+3. 在 `default.custom.yaml` 的 `schema_list` 中仿照已有項目加入一行 `- schema: tupa_sp`，注意與已有的項目對齊（如下方代碼所示）
+
+   若用戶目錄無該文件，則新建並貼上以下內容：
+
+   ```yaml
+   patch:
+     schema_list:
+       - schema: tupa
+       - schema: tupa_sp
+   ```
+
+4. 重新部署後即可選擇「切韻拼音·三拼」輸入法
+
 ## 聲明
 
-本方案（及其他類似方案）僅為基於切韻拼音所設計的便捷輸入方案，屬於其衍生品。此類輸入法亦非切韻拼音規範所涉及的領域，故本方案（及其他類似方案皆）不具有和切韻拼音同等的通用規範地位，亦不會作為切韻拼音的「指定配套方案」等。
+本方案（及其他類似方案）僅為基於切韻拼音所設計的便捷輸入方案，不是切韻拼音方案的一部分。此類輸入法亦非切韻拼音規範所涉及的領域，故本方案（及其他類似方案皆）不具有和切韻拼音同等的通用規範地位，亦不會作為切韻拼音的「指定配套方案」等。
