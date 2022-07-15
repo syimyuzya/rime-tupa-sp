@@ -1,6 +1,6 @@
 # RIME 切韻拼音三拼輸入方案
 
-基於 [RIME 切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa)，用固定三鍵打出一字。
+基於 [RIME 切韻拼音輸入方案](https://github.com/nk2028/rime-tupa)，用固定三鍵打出一字。
 
 __注意__：本輸入方案目前為 beta 版，設計已基本敲定，並經過測試。歡迎反饋使用體驗～
 
@@ -156,9 +156,9 @@ Z    X C V B       N M
 
 ### Windows
 
-1. 參見[切韻拼音輸入法 Windows 安裝方法](https://github.com/ayaka14732/rime-tupa#windows-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+1. 參見[切韻拼音輸入法 Windows 安裝方法](https://github.com/nk2028/rime-tupa#windows-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
 
-2. 在第二步鍵入 `ayaka14732/rime-tupa` 按 <kbd>Enter</kbd> 後，再額外鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd>，然後再繼續第三步。
+2. 在第二步鍵入 `nk2028/rime-tupa` 按 <kbd>Enter</kbd> 後，再額外鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd>，然後再繼續第三步。
 
    ※ 如果之前已經安裝過切韻拼音，則在跳出的視窗僅鍵入 `syimyuzya/rime-tupa-sp` <kbd>Enter</kbd> 即可。
 
@@ -166,7 +166,7 @@ Z    X C V B       N M
 
 ### macOS
 
-1. 參見[切韻拼音輸入法 macOS 安裝方法](https://github.com/ayaka14732/rime-tupa#macos-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+1. 參見[切韻拼音輸入法 macOS 安裝方法](https://github.com/nk2028/rime-tupa#macos-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
 
 2. 在第二步後，再額外複製粘貼以下命令：
 
@@ -180,7 +180,7 @@ Z    X C V B       N M
 
 ### Arch Linux
 
-1. 參見[切韻拼音輸入法 Arch Linux 安裝方法](https://github.com/ayaka14732/rime-tupa#arch-linux-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
+1. 參見[切韻拼音輸入法 Arch Linux 安裝方法](https://github.com/nk2028/rime-tupa#arch-linux-%E5%AE%89%E8%A3%9D%E6%96%B9%E6%B3%95)
 
 2. 第二步改為從 AUR 安裝 [`rime-tupa-sp`](https://aur.archlinux.org/packages/rime-tupa-sp)：
 
@@ -201,7 +201,7 @@ Z    X C V B       N M
 
 ### 手動安裝
 
-1. 先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/ayaka14732/rime-tupa#%E5%AE%89%E8%A3%9D)
+1. 先[安裝 RIME 輸入法及切韻拼音輸入方案](https://github.com/nk2028/rime-tupa#%E5%AE%89%E8%A3%9D)
 
 2. 下載此處的 `tupa_sp.schema.yaml`
 
