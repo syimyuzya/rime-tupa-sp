@@ -127,7 +127,8 @@ speller:
     - xform/^([YU])/w$1/
     - derive/^e/q/
     # 元音
-    - xform/OI(.)$/q$1/
+    - xform/OY(.)$/q$1/ # 「怎」
+    - xform/OI(.)$/q$1/ # 舊版「怎」，已棄用
     - xform/UE(.)$/p$1/
     - xform/WIE(.)$/o$1/
     - xform/YE(.)$/i$1/
