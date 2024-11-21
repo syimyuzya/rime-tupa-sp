@@ -4,7 +4,7 @@
 schema:
   schema_id: tupa_sp
   name: 切韻拼音·三拼
-  version: "0.1.1"
+  version: "0.1.2"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
@@ -158,6 +158,7 @@ speller:
 
 translator:
   dictionary: tupa
+  prism: tupa_sp
   #db_class: tabledb  # 用戶詞典用純文本，測試用
   spelling_hints: 8
   # TODO preedit_format:
