@@ -1,62 +1,19 @@
 # Rime schema
 # encoding: utf-8
 
+__include: tupa.schema:/
+
 schema:
   schema_id: tupa_sp
   name: 切韻拼音·三拼
-  version: "0.1.2"
+  version: "0.1.3"
   author:
     - 思無邪SyiMyuZya <syimyuzya@gmail.com>
     - Ayaka Mikazuki <ayaka@mail.shn.hk>
   description: |-
     切韻拼音三拼輸入方案測試版
-  dependencies:
-    - luna_pinyin
-    - jyut6ping3
-    - tupa_unspaced
-
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: [ 中文, 西文 ]
-  - name: full_shape
-    states: [ 半角, 全角 ]
-  - name: simplification
-    states: [ 漢字, 汉字 ]
-  - name: ascii_punct
-    states: [ 。，, ．， ]
-
-engine:
-  processors:
-    - ascii_composer
-    - recognizer
-    - key_binder
-    - speller
-    - punctuator
-    - selector
-    - navigator
-    - express_editor
-  segmentors:
-    - ascii_segmentor
-    - matcher
-    - affix_segmentor@luna_pinyin
-    - affix_segmentor@jyut6ping3
-    - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
-  translators:
-    - punct_translator
-    - script_translator
-    - script_translator@luna_pinyin
-    - script_translator@jyut6ping3
-  filters:
-    - simplifier
-    - uniquifier
-    - reverse_lookup_filter@tupa_reverse_lookup
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba
-  delimiter: " '"
   algebra:
     - xform/^([a-z]*)$/\U$1\E/
     # 調整
@@ -157,48 +114,6 @@ speller:
     - xform/A(.)$/s$1/
 
 translator:
-  dictionary: tupa
   prism: tupa_sp
-  #db_class: tabledb  # 用戶詞典用純文本，測試用
-  spelling_hints: 8
+  # db_class: tabledb  # 用戶詞典用純文本，測試用
   # TODO preedit_format:
-  comment_format:
-    - "xform/$/\u200b/" # 永遠顯示拼音
-
-luna_pinyin:
-  tag: luna_pinyin
-  dictionary: luna_pinyin
-  prefix: "`"
-  suffix: ";"
-  tips: 〔普通話〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-
-jyut6ping3:
-  tag: jyut6ping3
-  dictionary: jyut6ping3
-  prefix: "~"
-  suffix: ";"
-  tips: 〔粵語〕
-
-tupa_reverse_lookup:
-  tags: [ luna_pinyin, jyut6ping3 ]
-  overwrite_comment: false
-  dictionary: tupa_unspaced
-  comment_format:
-    - xform/=/ /
-
-punctuator:
-  import_preset: symbols
-
-key_binder:
-  import_preset: default
-
-recognizer:
-  import_preset: default
-  patterns:
-    punct: "^/([0-9]0?|[a-z]+)$"
-    luna_pinyin: "`[a-z]*;?$"
-    jyut6ping3: "~[a-z]*;?$"
